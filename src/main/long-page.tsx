@@ -1,15 +1,10 @@
-import PropTypes from "prop-types";
 import React, { Component } from "react";
-import { parseTxtToHTML } from "../../utils";
-import ScrollTopIcon from "../../common/scroll-top-button";
+import { parseTxtToHTML } from "../utils/index.ts";
+import ScrollTopIcon from "../common/scroll-top-button/index.tsx";
 
-import "./index.css";
+import "./long-page.css";
 
-export default class LongPage extends Component {
-  static propTypes = {
-    context: PropTypes.string,
-    style: PropTypes.object
-  };
+export default class LongPage extends Component<Props, State> {
 
   longPageRef: any;
   timer: any;
@@ -66,16 +61,12 @@ export default class LongPage extends Component {
     };
     const scrollIconStyle = { bottom: this.state.isShowTopIcon ? 20 : -70 };
     return (
-      
       <div className="long-page" style={pageStyle} onScroll={this.onScroll} ref={node => { this.longPageRef = node; }}>
-        
         <div className='long-page-container' style={Object.assign({}, style, { opacity: 0.75 })}>
           {list.map((item: any, index: any) => {
-            
             return (<p key={index}>{item}</p>);
           })}
         </div>
-        
         <ScrollTopIcon onClick={this.scrollToTop} style={scrollIconStyle}/>
       </div>
     );

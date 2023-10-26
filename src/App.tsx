@@ -7,9 +7,8 @@ import { convertNovel2Pages, convertNovel2Paragraph, checkParaGraph, parseNovel 
 import { DEFAULT_STYLE, PAGES, PARAGRAPHS, FULLSCREEN } from "./utils/constants.ts";
 import toaster from './common/toast/index.ts';
 import setting from "./setting.json";
-
-// import Main from "./main";
-// import Settings from "./settings";
+import Main from "./main/main.tsx";
+import Settings from "./settings/index.tsx";
 
 import "./css/App.css";
 
@@ -154,8 +153,7 @@ export default class App extends Component {
   };
 
   render () {
-    const { files, currentFileIndex } = this.state;
-    // style
+    const { files, style, currentFileIndex } = this.state;
     const currentFile = files[currentFileIndex];
     return (
       <div id="app">
@@ -170,7 +168,7 @@ export default class App extends Component {
           changePageIndex={this.changePageIndex}
           isShowLeftPanel={this.state.isShowLeftPanel}
         />
-        {/* <Main
+        <Main
           currentFile={currentFile}
           style={style}
           toggleRightPanel={this.toggleRightPanel}
@@ -182,7 +180,7 @@ export default class App extends Component {
           changeStyle={this.changeStyle}
           isShowRightPanel={this.state.isShowRightPanel}
           changeMode={this.changeMode}
-        /> */}
+        />
       </div>
     );
   }

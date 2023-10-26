@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from 'prop-types';
 import Select from "react-select";
 import { Label } from "reactstrap";
-import { MenuSelectStyle } from "../../utils";
+import { MenuSelectStyle } from "../../utils/index.ts";
 
 class FontSettings extends Component {
   constructor (props: any) {

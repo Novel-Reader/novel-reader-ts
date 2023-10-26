@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import NavFooter from "./nav-footer.tsx";
-// import NavHeader from "./nav-header";
-// import FileTree from "./file-tree";
-// import Outline from "./outline";
+import NavHeader from "./nav-header.tsx";
+import FileTree from "./file-tree.tsx";
+import Outline from "./outline/index.tsx";
 
 import "./index.css";
 
@@ -46,12 +46,11 @@ export default class Navs extends Component {
   };
 
   render () {
-    const { isShowLeftPanel } = this.props;
-    // const { currentFileIndex, isShowLeftPanel } = this.props;
-    // const { isSearch, currentNav, searchValue } = this.state;
+    const { currentFileIndex, isShowLeftPanel } = this.props;
+    const { isSearch, currentNav, searchValue } = this.state;
     return (
       <div id="navs" className="navs" style={{ width: isShowLeftPanel ? 200 : 0, display: isShowLeftPanel ? 'block' : 'none' }}>
-        {/* <NavHeader
+        <NavHeader
           isSearch={isSearch}
           currentNav={currentNav}
           changeCurrentNav={this.changeCurrentNav}
@@ -60,8 +59,8 @@ export default class Navs extends Component {
           searchValue={searchValue}
           onSearchChange={this.onSearchChange}
           closeSearch={this.closeSearch}
-        /> */}
-        {/* <div className="navs-body">
+        />
+        <div className="navs-body">
           {currentNav === "filetree" &&
             <FileTree
               files={this.props.files}
@@ -79,7 +78,7 @@ export default class Navs extends Component {
               changePageIndex={this.props.changePageIndex}
             />
           }
-        </div> */}
+        </div>
         <NavFooter addFile={this.props.addFile} />
       </div>
     );

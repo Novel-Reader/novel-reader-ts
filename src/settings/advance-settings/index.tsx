@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import AdvanceThemeSettings from "./advance-theme-settings";
-import ColorSettings from "./color-settings";
-import FontSettings from "./font-settings";
-import { FONT_SIZES, FONT_FAMILYS, FONT_WEIGHTS, LINE_HEIGHTS } from "../../utils/constants";
+import AdvanceThemeSettings from "./advance-theme-settings.tsx";
+import ColorSettings from "./color-settings.tsx";
+import FontSettings from "./font-settings.tsx";
+import { FONT_SIZES, FONT_FAMILYS, FONT_WEIGHTS, LINE_HEIGHTS } from "../../utils/constants.ts";
 import "./index.css";
 
 const INIT_FONT_COLOR = '#666';

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
 import { Nav, NavItem, NavLink } from "reactstrap";
-import BasicSettings from "./basic-settings";
-import AdvanceSettings from "./advance-settings";
+import BasicSettings from "./basic-settings/index.tsx";
+import AdvanceSettings from "./advance-settings/index.tsx";
 
 import "./index.css";
 

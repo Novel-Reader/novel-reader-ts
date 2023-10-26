@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Input } from "reactstrap";
-import { SearchIcon, ListIcon, TreeIcon, BackIcon } from "../common/icons";
-import NavIcon from './nav-icon';
+import { SearchIcon, ListIcon, TreeIcon, BackIcon } from "../common/icons.tsx";
+import NavIcon from './nav-icon.tsx';
 
 export default class NavHeader extends React.Component {
   static propTypes = {

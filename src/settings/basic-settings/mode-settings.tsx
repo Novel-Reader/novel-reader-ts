@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import { Button, ButtonGroup, Label } from "reactstrap";
-import { PAGES, PARAGRAPHS, FULLSCREEN } from "../../utils/constants";
+import { PAGES, PARAGRAPHS, FULLSCREEN } from "../../utils/constants.ts";
 
 const MODES = [
   { type: PAGES, name: '分页' },

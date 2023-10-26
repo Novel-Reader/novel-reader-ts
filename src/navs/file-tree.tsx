@@ -1,25 +1,20 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
 import classnames from "classnames";
-import { DeleteIcon } from '../common/icons';
+import { DeleteIcon } from '../common/icons.tsx';
 
 class FileTree extends Component {
   render () {
     const { files, currentFileIndex, searchValue } = this.props;
     return (
-      
       <div>
         {files.map((file: any, index: any) => {
           const isActive = currentFileIndex === index;
           if (searchValue && !file.name.includes(searchValue)) return null;
           return (
-            
             <div key={index} className={classnames("navs-body-item text-truncate d-flex", { active: isActive })}>
-              
               <span className='navs-body-item-name text-truncate' onClick={() => this.props.changeFileIndex(index)}>{file.name}</span>
-              
               <span className="navs-body-item-delete d-block" onClick={() => this.props.deleteFile(index)}>
-                
                 <DeleteIcon/>
               </span>
             </div>

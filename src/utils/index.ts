@@ -2,10 +2,9 @@ import exampleObj from "./example.json";
 
 /**
  * parse text file to html dom
- * @param {string} txt
  * @return {doms}
  */
-const parseTxtToHTML = (txt: any) => {
+const parseTxtToHTML = (txt: string) => {
   return txt.split("\n").filter((item: any) => item.trim().length > 0);
 };
 

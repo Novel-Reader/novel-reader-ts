@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
-import { PAGES, PARAGRAPHS } from "../../utils/constants";
+import { PAGES, PARAGRAPHS } from "../../utils/constants.ts";
+
 import './index.css';
 
 class Outline extends Component {
@@ -12,13 +13,10 @@ class Outline extends Component {
       const pageLen = context.length;
       const arr = new Array(pageLen).fill(1);
       return (
-
         <div className="outline outline-pages">
-
           <div className="outline-novel-name">{name}</div>
           {arr.map((item, index) => {
             return (
-
               <div
                 className="outline-novel-index"
                 style={{ color: currentPageIndex === index ? 'red' : '#333' }}

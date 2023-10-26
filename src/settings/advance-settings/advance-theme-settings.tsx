@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from 'prop-types';
 import Select from "react-select";
 import { Label } from "reactstrap";
-import { MenuSelectStyle } from "../../utils";
+import { MenuSelectStyle } from "../../utils/index.ts";
 
 class AdvanceThemeSettings extends Component {
   options: any;

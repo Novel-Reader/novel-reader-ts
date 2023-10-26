@@ -1,45 +1,27 @@
 import React from "react";
 
 function StarIcon () {
-  return (
-
-    <span className="icon icon-star-full"></span>
-  );
+  return <span className="icon icon-star-full"></span>;
 }
 
 function LoadingIcon () {
-  return (
-
-    <span className="icon icon-spinner"></span>
-  );
+  return <span className="icon icon-spinner"></span>;
 }
 
 function SearchIcon () {
-  return (
-
-    <span className="icon icon-search" title="搜索"></span>
-  );
+  return <span className="icon icon-search" title="搜索"></span>;
 }
 
 function ShareIcon () {
-  return (
-
-    <span className="icon icon-share2"></span>
-  );
+  return <span className="icon icon-share2"></span>;
 }
 
 function RightIcon () {
-  return (
-
-    <span className="icon icon-arrow-right2"></span>
-  );
+  return <span className="icon icon-arrow-right2"></span>;
 }
 
 function LeftIcon () {
-  return (
-
-    <span className="icon icon-arrow-left2"></span>
-  );
+  return <span className="icon icon-arrow-left2"></span>;
 }
 
 function ListIcon () {

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
-import FontSettings from "./font-settings";
-import ThemeSettings from "./theme-settings";
-import ModeSettings from './mode-settings';
+import FontSettings from "./font-settings.tsx";
+import ThemeSettings from "./theme-settings.tsx";
+import ModeSettings from './mode-settings.tsx';
 import "./index.css";
 
 class BasicSettings extends Component {

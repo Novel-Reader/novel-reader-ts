@@ -1,14 +1,15 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import LongPage from "./long-page";
-import FoldedIcon from "./folded-icon";
-import { PAGES, PARAGRAPHS } from "../utils/constants";
-import "./index.css";
+import LongPage from "./long-page.tsx";
+import FoldedIcon from "./folded-icon.tsx";
+import { PAGES, PARAGRAPHS } from "../utils/constants.ts";
+
+import "./main.css";
 
 const LONG_PAGE = "long_page";
-// const SHORT_PAGE = 'short_page';
 
 export default class Main extends Component {
+
   static propTypes = {
     currentPageIndex: PropTypes.number.isRequired,
     toggleRightPanel: PropTypes.func.isRequired,
@@ -52,9 +53,6 @@ export default class Main extends Component {
             isShowRightPanel={this.state.isShowRightPanel}
           />
         }
-        {/* {mode === SHORT_PAGE &&
-          <ShortPage />
-        } */}
         <FoldedIcon toggleRightPanel={this.props.toggleRightPanel} isShowRightPanel={this.props.isShowRightPanel} />
       </div>
     );

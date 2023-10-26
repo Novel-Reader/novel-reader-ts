@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
-import { RightIcon, LeftIcon } from "../../common/icons";
+import { RightIcon, LeftIcon } from "../common/icons.tsx";
 
 class FoldedIcon extends Component {
   render () {

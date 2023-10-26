@@ -36,6 +36,6 @@ module.exports = {
     'semi': 'off',
     'no-trailing-spaces': 'off',
     'react/jsx-no-comment-textnodes': 'off',
-
+    'no-multiple-empty-lines': 'off',
   }
 }
