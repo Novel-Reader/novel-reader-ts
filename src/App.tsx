@@ -10,6 +10,8 @@ import setting from "./setting.json";
 import Main from "./main/main.tsx";
 import Settings from "./settings/index.tsx";
 
+// An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+
 import "./css/App.css";
 
 export default class App extends Component {
