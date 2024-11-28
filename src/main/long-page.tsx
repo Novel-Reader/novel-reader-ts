@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { parseTxtToHTML } from "../utils/index.ts";
 import ScrollTopIcon from "../common/scroll-top-button/index.tsx";
 
-import "./long-page.css";
+import "./long-page.less";
 
 export default class LongPage extends Component<Props, State> {
 

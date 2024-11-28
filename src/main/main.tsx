@@ -4,7 +4,7 @@ import LongPage from "./long-page.tsx";
 import FoldedIcon from "./folded-icon.tsx";
 import { PAGES, PARAGRAPHS } from "../utils/constants.ts";
 
-import "./main.css";
+import "./main.less";
 
 const LONG_PAGE = "long_page";
 

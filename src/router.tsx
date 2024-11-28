@@ -1,9 +1,6 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import MediaQuery from 'react-responsive';
 import App from "./App.tsx";
-import AppMobile from './App-mobile.tsx';
-// import ErrorPage from "./pages/error-page";
 import Admin from "./pages/admin/index.tsx";
 import Login from "./pages/login/index.tsx";
 import setting from "./setting.json";
@@ -19,14 +16,7 @@ if (setting.mode === 'online') {
     {
       path: "/reader",
       element: (
-        <>
-          <MediaQuery query="(min-device-width: 767.8px)">
-            <App/>
-          </MediaQuery>
-          <MediaQuery query="(max-device-width: 767.8px)">
-            <AppMobile/>
-          </MediaQuery>
-        </>
+        <App/>
       ),
       errorElement: <App />
     },
@@ -34,12 +24,6 @@ if (setting.mode === 'online') {
       path: "admin/",
       element: <Admin />
     }
-    // {
-    //   path: "register/",
-    //   element: <Register />,
-    // },
-    // and renders this element in case something went wrong
-    // errorElement: <ErrorBoundary />
   ]);
 }
 
@@ -48,14 +32,7 @@ if (setting.mode === 'offline') {
     {
       path: "/",
       element: (
-        <>
-          <MediaQuery query="(min-device-width: 767.8px)">
-            <App/>
-          </MediaQuery>
-          <MediaQuery query="(max-device-width: 767.8px)">
-            <AppMobile/>
-          </MediaQuery>
-        </>
+        <App/>
       ),
       errorElement: <App />
     }
