@@ -5,7 +5,7 @@ import NavHeader from "./nav-header.tsx";
 import FileTree from "./file-tree.tsx";
 import Outline from "./outline/index.tsx";
 
-import "./index.css";
+import "./index.less";
 
 export default class Navs extends Component {
 

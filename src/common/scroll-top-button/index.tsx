@@ -1,7 +1,7 @@
 import React from "react";
 import { UncontrolledTooltip } from "reactstrap";
+import "./index.less";
 
-import "./index.css";
 function ScrollTopIcon({ onClick, style }: { onClick: Function, style: Object }) {
   const id = "novel-scroll-top-icon";
   return (

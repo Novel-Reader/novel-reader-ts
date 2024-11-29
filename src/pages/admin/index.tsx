@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import './index.css';
+import './index.less';
 
 // https://reactrouter.com/en/main/start/tutorial
 

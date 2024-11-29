@@ -1,7 +1,7 @@
 import React from "react";
 import { StarIcon } from "../icons.tsx";
 import VipDialog from "../vip-dialog/index.tsx";
-import "./index.css";
+import "./index.less";
 
 export default function VipButton () {
   const [isOpen, setOpen] = React.useState(false);

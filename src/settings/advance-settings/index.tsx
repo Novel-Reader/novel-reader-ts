@@ -4,10 +4,11 @@ import AdvanceThemeSettings from "./advance-theme-settings.tsx";
 import ColorSettings from "./color-settings.tsx";
 import FontSettings from "./font-settings.tsx";
 import { FONT_SIZES, FONT_FAMILYS, FONT_WEIGHTS, LINE_HEIGHTS } from "../../utils/constants.ts";
-import "./index.css";
+import "./index.less";
 
 const INIT_FONT_COLOR = '#666';
 const INIT_BACKGROUND_COLOR = '#aaa';
+
 
 function AdvanceSettings (props: any) {
   // isPro ? <>welcome to user advance setting</> : <>please upgrade to VIP version</>

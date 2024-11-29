@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import LoginDialog from "../../common/login-dialog/index.tsx";
 import { Button } from 'reactstrap';
-import './index.css';
+import './index.less';
 
 class Login extends Component {
   constructor (props: any) {

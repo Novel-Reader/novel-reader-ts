@@ -18,68 +18,55 @@ test("get user list", () => {
   });
 });
 
-// 测试全部用户 通过
 api.getUsers().then((res: any) => {
-  // TODO test query user and check is Pro version
-  // const userList = res.data;
+  const userList = res.data;
+  console.log(userList)
 }).catch((err: any) => {
   console.error(err);
 });
 
-// 测试存在的用户 email 通过
 api.getUserInfo('mike@163.com').then((res: any) => {
-  // TODO test query user and check is Pro version
   console.log(res.data);
 }).catch((err: any) => {
   console.error(err);
 });
 
-// 测试不存在的用户 email 通过
 api.getUserInfo('Amy@163.com').then((res: any) => {
-  // TODO test query user and check is Pro version
   console.log(res.data);
 }).catch((err: any) => {
   console.error(err);
 });
 
-// 测试新增用户 通过
 api.addUser('julia@qq.com', 'Julia', '').then((res: any) => {
   console.log(res.data);
 }).catch((err: any) => {
-  // 这里测试没有密码
-  // console.log(err);
   console.log(err.response.data.error_massage);
 });
 
-// 测试正常的用户 通过
 api.addUser('julia@qq.com', 'Julia', '12345678').then((res: any) => {
   console.log(res.data === 'success');
 }).catch((err: any) => {
   console.error(err);
 });
 
-// 测试删除用户
 api.deleteUser('julia@qq.com').then((res: any) => {
   console.log(res.data);
 }).catch((err: any) => {
   console.error(err);
 });
 
-// 测试更新用户信息时，需要有这个用户
 api.addUser('julia@qq.com', 'Julia', '12345678').then((res: any) => {
   console.log(res.data === 'success');
 }).catch((err: any) => {
   console.error(err);
 });
 
-// 更改用户密码
 api.updateUserPassword('666888', 'julia@qq.com').then((res: any) => {
   console.log(res.data === 'success');
 }).catch((err: any) => {
   console.error(err);
 });
 
-// 更改用户头像
 api.updateUserAvatar('www.baidu.com', 'julia@qq.com').then((res: any) => {
   console.log(res.data === 'success');
 }).catch((err: any) => {

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Book from './book.tsx';
 
-import './book-list.css';
+import './book-list.less';
 
 function BookList (props: any) {
   if (!Array.isArray(props.novelList) || props.novelList.length === 0) {

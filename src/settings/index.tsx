@@ -4,7 +4,7 @@ import { Nav, NavItem, NavLink } from "reactstrap";
 import BasicSettings from "./basic-settings/index.tsx";
 import AdvanceSettings from "./advance-settings/index.tsx";
 
-import "./index.css";
+import "./index.less";
 
 class Settings extends Component {
   // 这里应该把设置对象传过来

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import FontSettings from "./font-settings.tsx";
 import ThemeSettings from "./theme-settings.tsx";
 import ModeSettings from './mode-settings.tsx';
-import "./index.css";
+import "./index.less";
 
 class BasicSettings extends Component {
   onSaveFont = (index: any) => {

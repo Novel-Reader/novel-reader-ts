@@ -3,7 +3,7 @@ import { Nav, NavItem, NavLink, Modal, ModalHeader, ModalBody } from "reactstrap
 import LoadFromLocal from "./load-from-local.tsx";
 import LoadFromServer from "./load-from-server.tsx";
 
-import "./index.css";
+import "./index.less";
 
 function AddNovelDialog({closeDialog, addFile}: any) {
   const [ activeTab, setActiveTab ] = useState<string>('local');

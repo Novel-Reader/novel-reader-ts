@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
 import { Modal, ModalHeader, ModalBody, Button, Input, Label } from "reactstrap";
-import "./index.css";
+import "./index.less";
 
 class VipDialog extends Component {
   render () {
