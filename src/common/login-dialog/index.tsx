@@ -21,7 +21,6 @@ class LoginDialog extends Component {
     axios.post(`${setting.server}/login`, options).then(res => {
       if (res.data.token) {
         toaster.success(`用户 ${email} 登录成功`);
-        // this.props.setEnv();
         this.props.initFromServer(res.data.token);
         this.props.toggle();
       } else {
@@ -38,30 +37,19 @@ class LoginDialog extends Component {
 
   render () {
     return (
-      
       <Modal isOpen={true} toggle={this.props.toggle} className="login-dialog">
-        
         <ModalHeader toggle={this.props.toggle}>登录</ModalHeader>
-        
         <ModalBody>
-          
           <Form>
-            
             <FormGroup>
-              
               <Label>邮箱</Label>
-              
               <Input type="text" innerRef={this.emailRef} autoFocus />
             </FormGroup>
-            
             <FormGroup>
-              
               <Label>密码</Label>
-              
               <Input type="password" innerRef={this.passwordRef}/>
             </FormGroup>
           </Form>
-          
           <Button color="success" onClick={this.onLogin}>登录</Button>
         </ModalBody>
       </Modal>

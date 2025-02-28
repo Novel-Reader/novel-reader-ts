@@ -9,7 +9,7 @@ function AddNovelDialog({closeDialog, addFile}: any) {
   const [ activeTab, setActiveTab ] = useState<string>('local');
   return (
     <Modal isOpen={true} toggle={closeDialog} className="add-novel-dialog" size="lg">
-      <ModalHeader toggle={closeDialog}>导入</ModalHeader>        
+      <ModalHeader toggle={closeDialog}>导入</ModalHeader>
       <ModalBody>
         <div className='add-novel-dialog-side'>
           <Nav pills vertical>

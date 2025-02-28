@@ -93,11 +93,8 @@ class AdvanceThemeSettings extends Component {
   render () {
     const preCls = "advance-theme-settings";
     return (
-      
       <div className={preCls}>
-        
         <Label>系列主题</Label>
-        
         <Select
           value={this.state.currentSelected}
           options={this.options}

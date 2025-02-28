@@ -11,15 +11,11 @@ function ThemeSettings (props: any) {
   }
 
   return (
-    
     <div className="basic-settings-item">
-      
       <Label>页面主题</Label>
-      
       <ButtonGroup>
         {['日间', '护眼', '夜间'].map((item, index) => {
           return (
-            
             <Button
               key={index}
               color="primary"
@@ -39,9 +35,6 @@ function ThemeSettings (props: any) {
 ThemeSettings.propTypes = {
   onSave: PropTypes.func.isRequired,
   theme: PropTypes.number
-};
-
-ThemeSettings.defaultProps = {
 };
 
 export default ThemeSettings;

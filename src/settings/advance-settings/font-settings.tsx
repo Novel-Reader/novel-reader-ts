@@ -20,11 +20,8 @@ class FontSettings extends Component {
   render () {
     const preCls = "advance-font-settings";
     return (
-      
       <div className={preCls}>
-        
         <Label>{this.props.title}</Label>
-        
         <Select
           value={this.state.selected}
           options={this.props.options}
@@ -33,7 +30,6 @@ class FontSettings extends Component {
           className={`${preCls}-select`}
           classNamePrefix
           styles={MenuSelectStyle}
-          // placeholder='选择主题'
         />
       </div>
     );

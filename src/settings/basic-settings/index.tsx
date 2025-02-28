@@ -45,19 +45,12 @@ class BasicSettings extends Component {
   };
 
   render () {
-    // TODO：这里从父组件中获取到当前的颜色，然后再给子组件传参
     return (
-      
       <div className='basic-settings'>
-        
         <FontSettings onSave={this.onSaveFont} />
-        
         <div className='setting-divide-line'></div>
-        
         <ThemeSettings onSave={this.onSaveTheme} />
-        
         <div className='setting-divide-line'></div>
-        
         <ModeSettings changeMode={this.props.changeMode} />
       </div>
     );

@@ -47,35 +47,22 @@ class SearchFromServer extends Component {
 
   render () {
     return (
-      
       <div className="novel-list">
-        
         <div>
-          
           <Form>
-            
             <FormGroup>
-              
               <Label>名称(可选)</Label>
-              
               <Input type="text" innerRef={this.nameRef} autoFocus />
             </FormGroup>
-            
             <FormGroup>
-              
               <Label>作者(可选)</Label>
-              
               <Input type="text" innerRef={this.authorRef}/>
             </FormGroup>
-            
             <FormGroup>
-              
               <Label>价格(可选)</Label>
-              
               <Input type="number" innerRef={this.priceRef}/>
             </FormGroup>
           </Form>
-          
           <Button color="success" onClick={this.searchNovels}>搜索</Button>
         </div>
         {this.state.isLoading

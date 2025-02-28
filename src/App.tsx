@@ -55,7 +55,6 @@ export default class App extends Component {
   };
 
   initFromServer = () => {
-    // TODO
     const token = window.location.search.slice(7);
     this.api = new LocalAPI();
     this.api.init({ server: setting.server, token });
@@ -108,7 +107,6 @@ export default class App extends Component {
         isShowLeftPanel: false,
         isShowRightPanel: false
       });
-      // 这里看一下是否改动 files 对象
     }
   };
 

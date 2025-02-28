@@ -1,11 +1,9 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
 import { Button } from "reactstrap";
-
 import VipButton from "../../common/vip-button/index.tsx";
 import setting from "../../setting.json";
 import toaster from '../../common/toast/index.ts';
-
 import BookList from './book-list.tsx';
 import SearchFromServer from './search-from-server.tsx';
 
@@ -66,31 +64,23 @@ class LoadFromServer extends Component {
   render () {
     if (!this.isOnline) {
       return (
-        
         <div>
           这是联网专属功能
-          
           <VipButton />
         </div>
       );
     }
     if (this.state.isSearch) {
       return (
-        
         <SearchFromServer onClickNovel={this.onClickNovel} />
       );
     }
     return (
-      
       <div className="novel-list">
-        
         <div>
-          
           <h3>热点小说</h3>
-          
           <Button onClick={this.changeSearch}>在线搜索</Button>
         </div>
-        
         <BookList novelList={this.state.novelList} onClickNovel={this.onClickNovel} />
       </div>
     );

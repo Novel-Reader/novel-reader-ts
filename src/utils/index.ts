@@ -1,9 +1,5 @@
 import exampleObj from "./example.json";
 
-/**
- * parse text file to html dom
- * @return {doms}
- */
 const parseTxtToHTML = (txt: string) => {
   return txt.split("\n").filter((item: any) => item.trim().length > 0);
 };
@@ -40,12 +36,10 @@ const setLocalValue = (key: string, value: any) => {
 
 const MenuSelectStyle = {
   option: (provided: any, state: any) => {
-    // const { isSelected, isFocused } = state;
     const { isDisabled } = state;
     return ({
       ...provided,
       cursor: isDisabled ? "default" : "pointer"
-      // backgroundColor: isSelected ? '#20a0ff' : (isFocused ? '#f5f5f5' : '#fff'),
     });
   },
   control: (provided: any) => ({

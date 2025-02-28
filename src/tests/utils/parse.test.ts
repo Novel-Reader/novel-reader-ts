@@ -12,7 +12,7 @@ test("parse txt to pages", () => {
 });
 
 test("parse txt to paragraphs", () => {
-  const result = convertNovel2Paragraph(files[2].context);
+  const result = convertNovel2Paragraph(files[1].context);
   expect(typeof result).toBe('object');
   expect(result.type).toBe(PARAGRAPHS);
   expect(result.context.length > 0).toBe(true);
@@ -20,7 +20,7 @@ test("parse txt to paragraphs", () => {
 
 test("check novel has paragraph", () => {
   expect(checkParaGraph(files[0].context)).toBe(false);
-  expect(checkParaGraph(files[2].context)).toBe(true);
+  expect(checkParaGraph(files[1].context)).toBe(true);
 });
 
 test("parse txt to novel", () => {

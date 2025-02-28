@@ -116,15 +116,11 @@ class LoadFromLocal extends Component {
     }
     return (
       <div className="local-file-info">
-        
         <Form>
-          
           <FormGroup>
-            
             <Label for="filename">
               名称
             </Label>
-            
             <Input
               id="filename"
               name="text"
@@ -134,13 +130,10 @@ class LoadFromLocal extends Component {
               onChange={(e) => { this.setState({ filename: e.target.value }); }}
             />
           </FormGroup>
-          
           <FormGroup>
-            
             <Label for="author">
               作者
             </Label>
-            
             <Input
               id="author"
               name="text"
@@ -150,13 +143,10 @@ class LoadFromLocal extends Component {
               onChange={(e) => { this.setState({ author: e.target.value }); }}
             />
           </FormGroup>
-          
           <FormGroup>
-            
             <Label for="filetag">
               分类
             </Label>
-            
             <Select
               value={this.state.currentSelected}
               options={this.options}
@@ -169,13 +159,10 @@ class LoadFromLocal extends Component {
               styles={MenuSelectStyle}
             />
           </FormGroup>
-          
           <FormGroup>
-            
             <Label for="abstract">
               摘要（默认选择原文前 100 字）
             </Label>
-            
             <Input
               className="load-from-local-abstract"
               id="abstract"
@@ -186,22 +173,16 @@ class LoadFromLocal extends Component {
             />
           </FormGroup>
           {this.isOnline &&
-            
             <FormGroup check>
-              
               <Input type="checkbox" innerRef={this.checkboxRef}/>
               {' '}
-              
               <Label check>
                 是否同步到线上
               </Label>
             </FormGroup>
           }
-          
           <ModalFooter>
-            
             <Button onClick={this.onUpload} color="primary">上传</Button>
-            
             <Button onClick={this.onClear} color="secondary">取消</Button>
           </ModalFooter>
         </Form>

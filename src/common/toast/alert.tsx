@@ -92,14 +92,10 @@ class Alert extends React.PureComponent {
     const toastStyle = this.getContainerStyle(this.props.intent);
     return (
       <div {...css(toastStyle.borderStyle, this.containerStyle)}>
-
         <div className={this.toastIcon} >
-          
           <i className={toastStyle.iconClass} {...toastStyle.iconColor}/>
         </div>
-        
         <div className={this.toastTextContainer}>
-          
           <p className={this.toastTextTitle}>{this.props.title}</p>
           {this.props.children ? <p className={this.toastTextChild}>{this.props.children}</p> : ''}
         </div>

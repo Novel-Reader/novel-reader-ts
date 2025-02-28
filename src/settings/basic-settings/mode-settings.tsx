@@ -12,15 +12,11 @@ const MODES = [
 function ModeSettings (props: any) {
   const { changeMode } = props;
   return (
-    
     <div className="basic-settings-item">
-      
       <Label>阅读模式</Label>
-      
       <ButtonGroup>
         {MODES.map((mode, index) => {
           return (
-            
             <Button
               key={index}
               color="primary"

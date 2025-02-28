@@ -48,16 +48,11 @@ class ColorSettings extends React.Component {
 
   render () {
     return (
-      
       <div>
-        
         <Label>{this.props.title}</Label>
-        
         <div style={{ backgroundColor: this.state.color }} onClick={this.toggle} id='font-color-settings-current'></div>
         {this.state.isShowPicker &&
-          
           <Popover placement="left" isOpen={this.state.isShowPicker} target='font-color-settings-current' fade={false} hideArrow>
-            
             <SketchPicker
               className='font-color-settings-picker'
               color={this.state.color}

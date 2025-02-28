@@ -19,13 +19,9 @@ class FontSettings extends Component {
     const { fontSize } = this.state;
     const { setFontSize } = this;
     return (
-      
       <div className="basic-settings-item">
-        
         <Label>文字大小</Label>
-        
         <ButtonGroup>
-          
           <Button
             color="primary"
             outline
@@ -34,7 +30,6 @@ class FontSettings extends Component {
           >
             大
           </Button>
-          
           <Button
             color="primary"
             outline
@@ -43,7 +38,6 @@ class FontSettings extends Component {
           >
             中
           </Button>
-          
           <Button
             color="primary"
             outline

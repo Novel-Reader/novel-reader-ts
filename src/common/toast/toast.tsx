@@ -72,7 +72,6 @@ export default class Toast extends React.PureComponent {
 
   componentDidUpdate (prevProps: any) {
     if (prevProps.isShown !== this.props.isShown) {
-      // eslint-disable-next-line react/no-did-update-set-state
       this.setState({
         isShown: this.props.isShown
       });
@@ -148,9 +147,7 @@ export default class Toast extends React.PureComponent {
               marginBottom: this.state.isShown ? 0 : -this.state.height
             }}
           >
-            
             <div ref={this.onRef} style={{ padding: 8 }}>
-              
               <Alert
                 {...this.props}
                 onRemove={(event: any) => this.close(event)}
